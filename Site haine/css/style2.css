@@ -1,0 +1,249 @@
+/*ABOUT US*/
+.aboutus{
+    margin: 3rem;
+}
+
+.card2,.card1{
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem;
+    box-shadow: 0px 5px 15px #E2E4E6;
+    margin: 1rem;
+}
+
+h5 { 
+    padding-bottom: 0.5rem ;
+    border-bottom: 1px solid #666 ;
+}
+
+.card p {
+    color: #666;
+    text-align: justify;
+}
+
+/*CONTACT US*/
+.container{
+    width: 90%;
+    margin:2rem auto;
+}
+
+.contact-box{
+    display: flex;
+    background: #F2F2F2;
+}
+
+.contact-left{
+    flex-basis: 60%;
+    padding: 2.5rem 4rem;
+    background: #E2E4E6;
+}
+.contor-submit{
+    font-size: medium;
+    color: #7d7d7d;
+}
+
+.contact-right{
+    flex-basis: 40%;
+    padding: 3rem;
+}
+
+.container h2{
+    margin-bottom: 1rem;
+}
+
+.container p{
+    margin-bottom: 2.5rem;
+}
+
+.input-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-control{
+    outline: none;
+    background-color: #b8b8b8;
+    margin: 0.5rem;
+}
+
+#floatingTextarea2{
+    width: 100%;
+    height: 300px;
+    border:1px solid;
+    outline: none;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+.contact-left span{
+    position:relative;
+    font-size: smaller;
+    text-align: right;
+    color: red;
+}
+
+
+label{
+    margin-bottom: 6px;
+    display: block;
+}
+
+.container button{
+    background:  #F2F2F2;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #666;
+    margin-top: 1.5rem;
+    box-shadow: 0px 5px  15px;
+    text-align: center;
+}
+
+iframe{
+    width: 100%;
+    height:300px;
+    border: none;
+    margin-bottom: 1.5rem;
+}
+
+table{
+    width: 100%; 
+}
+
+tr td:first-child{
+    padding-right: 1.5rem;
+}
+
+tr td{
+    padding-top: 1rem;
+}
+
+/* Stilizare pentru secțiunea de vreme */
+.weather {
+    max-width: 450px; /* Setează lățimea maximă a secțiunii */
+    margin: 0 auto; /* Centrează secțiunea pe pagină */
+    text-align: center; /* Aliniază conținutul textului la centru */
+}
+
+.weather h3{
+    font-size: medium;
+    
+}
+/* Stilizare pentru câmpul de introducere a orașului */
+#city-input {
+    padding: 10px; /* Adaugă spațiu de margine în jurul textului din interior */
+    width: 60%; /* Setează lățimea câmpului de introducere */
+    margin-bottom: 10px; /* Adaugă spațiu între câmpul de introducere și buton */
+    border: 1px solid #ccc; /* Adaugă o bordură subțire cu culoarea gri deschis */
+    border-radius: 2rem; /* Rotunjirea marginilor */
+}
+
+/* Stilizare pentru butonul de obținere a vremii */
+#get-weather-btn {
+    padding: 10px 20px; /* Adaugă spațiu de margine în jurul textului din interior */
+    background-color: #bcbcbc; /* Setează culoarea de fundal a butonului la gri */
+    color: white; /* Setează culoarea textului la alb */
+    border: none; /* Elimină bordura butonului */
+    border-radius: 5px; /* Rotunjirea marginilor */
+    cursor: pointer; /* Arată cursorul de mână atunci când treci peste buton */
+}
+
+/* Stilizare pentru interacțiunea cu cursorul peste buton */
+#get-weather-btn:hover {
+    background-color: #E2E4E6; /* Schimbă culoarea de fundal la gri deschis atunci când treci peste buton */
+}
+
+/* Stilizare pentru afișarea rezultatelor vremii */
+#weather-output {
+    margin: 2rem; /* Adaugă spațiu exterior pentru a separa rezultatele de restul conținutului */
+    padding: 0.5rem; /* Adaugă spațiu interior pentru a îmbunătăți aspectul */
+    border: none; /* Elimină orice bordură */
+    border-radius: 2rem; /* Rotunjirea marginilor */
+    background-color: #f9f9f9; /* Setează culoarea de fundal la gri deschis */
+}
+
+
+@media screen and (max-width: 768px) {
+    .aboutus{
+        flex-direction: column;
+        margin: 0.5rem;
+    }
+    .aboutus1,.aboutus2{
+        width: auto;
+    }
+    .aboutus p{
+        font-size: smaller;
+    }
+    .aboutus h2{
+        font-size: medium;
+    }
+    
+    .container h2,.container h3{
+        font-size: large;
+    }
+
+    .container p,label{
+        font-size: medium;
+    }
+
+    .contact-box {
+        flex-direction: column;
+    }
+
+    .contact-left,
+    .contact-right {
+        flex-basis: auto;
+        padding: 2rem;
+    }
+
+    .input-row,
+    .input-group {
+        flex-basis: 100%;
+        flex-direction: column;
+        font-size: small;
+    }
+     
+    iframe {
+        width: 100%;
+        height: auto;
+        border: none;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1115px){
+    .aboutus{
+        flex-direction: column;
+    }
+    .aboutus1,.aboutus2{
+        width: auto;
+    }
+    
+    .contact-box {
+        flex-direction: column;
+    }
+
+    .contact-left{
+        flex-basis: 40%;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+        border: none;
+        margin-bottom: 1.5rem;
+    }
+    
+    .input-row{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1116px) and (max-width: 1200px){
+    .contact-box {
+        flex-direction: column;
+    }
+    .input-row{
+        flex-direction: column;
+    }
+}

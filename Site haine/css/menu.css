@@ -1,0 +1,236 @@
+/*  NAVIGATION  */
+
+.logo{
+    width: 5rem;
+}
+
+.navbar-nav li, .navbar-nav a {
+    padding: 1rem; 
+    color: rgba(82, 78, 49, 0.797)  ; 
+    text-decoration: none  ; 
+}
+
+.navbar-nav a.active{
+    color: rgba(67, 65, 44, 0.797); 
+    font-weight: bold ;
+}
+ 
+
+/*  FOOTER    */
+.footer{
+    width: 100%;
+    padding: 1rem 10%;
+    background-color: #E2E4E6;
+    display: flex;
+}
+
+.footer div{
+    text-align: center;
+}
+
+.subscribe{
+    flex-grow:2;
+}
+
+.footer  h3{
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+}
+
+.useful-links a,.social-links a{
+    display: block;
+    text-decoration: none;
+    color:rgba(82, 78, 49, 0.797);
+    margin-bottom: 1rem;
+}
+
+form input{
+    width:400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin:1rem;
+    outline: none;
+    border:none;
+    background-color: #ebedef;
+}
+
+h2{
+    padding-top: 1rem;
+}
+
+.subscribe p{
+    padding-top: 10%;
+    color:rgb(179, 176, 176);
+}
+
+.subscribe button{
+    background-color: rgb(217, 215, 215); 
+    border: none;
+    border-radius: 25px;
+}
+
+.subscribe button:hover{
+    background-color: rgb(235, 231, 231); 
+}
+
+/*  COPYRIGHT  */
+.under-footer{
+    background-color: #E2E4E6;
+    text-align: center;
+    color:#939698;
+}
+
+@media screen and (max-width: 417px){
+    .logo{
+        display: none;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+    .footer a{
+        padding: 0rem;
+        font-size: x-small;
+    }
+    h3{
+        padding: 0.5rem;
+        font-size: x-small;
+    }
+
+    .subscribe input[type="email"]{
+        width: calc(100% - 20px); /* Adjusting width to fit within the container */
+    }
+    .footer-container {
+        padding: auto; /* Decrease padding on smaller screens */
+    }
+
+    .subscribe button{
+        margin-bottom: 2rem;
+        padding:5px 5px;
+    }
+
+    .under-footer{
+        font-size: small;
+    }
+
+    form input{
+        height: 2rem;
+    }
+}
+
+@media screen and (min-width: 417px) and (max-width: 768px){
+    .footer {
+        flex-direction: column;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .footer a{
+        padding: 0rem;
+        font-size: small;
+    }
+    h3{
+        padding: 0.5rem;
+        font-size: smaller;
+    }
+
+    .footer .useful-links,
+    .footer .subscribe,
+    .footer .social-links{
+        flex-basis: auto;
+    }
+
+    .subscribe input[type="email"]{
+        width: calc(100% - 20px); /* Adjusting width to fit within the container */
+    }
+    .footer-container {
+        padding: auto; /* Decrease padding on smaller screens */
+    }
+
+    .subscribe button{
+        margin-bottom: 2rem;
+        padding:5px 5px;
+    }
+
+    .under-footer{
+        font-size: small;
+    }
+
+    form input{
+        height: 2rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1115px){
+    .subscribe button{
+        margin: 2.5rem;
+    }
+    
+    
+    .footer{
+        padding: 1rem 10%;
+    }
+
+    form input{
+        width: 80%;
+    }
+    
+    .subscribe button{
+        margin-bottom: 2rem;
+        padding:0.5rem;
+    }
+}
+
+@media screen and (min-width:1115px) and (max-width:1141px) {
+
+    header{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .nav_links {
+        display: none; /* Hide navigation links by default */
+    }
+
+    .hamburger-menu {
+        display: block; /* Show hamburger menu on smaller screens */
+        cursor: pointer;
+    }
+
+    .nav_links.responsive {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:1141px) and (max-width:3000px) {
+    .toggle_input,.label_toggle{
+        display: none;
+    }
+
+    .subscribe button{
+        padding:0.5rem;
+        margin-top: 2rem;
+        font-size: medium;
+    }
+    .footer a{
+        padding: 0rem;
+        font-size: medium;
+    }
+    h3{
+        padding: 0.5rem;
+        font-size: medium;
+    }
+
+    .under-footer{
+        font-size: medium;
+    }
+
+    form input{
+        font-size: larger;
+    }
+    
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style2.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <script src="../javascript/script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    <title>Pulse</title>
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <img class="logo" src="../Images/logo-removebg-preview.png" alt="logo">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul cul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li> <a href="../html/index.html">Home</a></li>
+                <li><a  href="../html/products.html">Products </a></li>
+                <li><a  href="../html/about.html" >About us</a></li>
+                <li><a class="nav-link active"  href="../html/contact.html" >Contact</a></li>
+                </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container ">
+        <h2>Connect With Us</h2>
+        <p>We would love to respond to your queries. <br>Feel free to get in touch with us.</p>
+        <div class="contor-submit">Form submitted: <span id="submitCount">0</span> times </div>
+        <div class="contact-box">
+            <div class="contact-left">
+                <h3>Sent your request</h3>
+                <form id="form" onsubmit="return validateForm();"> 
+                    <div class="input-row">
+                        <div class="form-floating">
+                            <input type="text" class="name form-control from-text " id="floatingName" placeholder="Adams Jack" onkeyup="validateName()">
+                            <label for="floatingName">Name</label>
+                            <span id="error-name"></span>
+                        </div>
+                        <div class="form-floating ">
+                            <input type="number" class="phone form-control from-text" id="floatingPhone" placeholder="0772584765" onkeyup="validatePhone()">
+                            <label for="floatingPhone">Phone</label>
+                            <span id="error-phone"></span>
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="form-floating">
+                            <input type="email" class="email form-control from-text" id="floatingEmail" placeholder="name@example.com" onkeyup="validateEmail()">
+                            <label for="floatingEmail">Email</label>
+                            <span id="error-email"></span>
+                          </div>
+                          <div class="form-floating">
+                            <input type="text" class="subject form-control from-text" id="floatingSubject" placeholder="Crop top product" onkeyup="validateSubject()">
+                            <label for="floatingSubject">Subject</label>
+                            <span id="error-subject"></span>
+                        </div>
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="message form-control " placeholder="Leave a message here" id="floatingTextarea2" onkeyup="validateMessage()"></textarea>
+                        <label for="floatingTextarea2">Message</label>
+                        <span id="error-message"></span>
+                      </div>
+
+                    <button type="submit" id="submit" class="btn btn-secondary">Send</button>
+                </form>
+            </div>
+
+            <div class="contact-right">
+                <div class="input-row">
+                        <h3>Reach Us</h3>
+                </div>
+                <div class="input-row-iframe">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2767.2403488404684!2d23.589319977051908!3d46.08618637109101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474ea94c4efade33%3A0xd0b472030cbb3647!2sCarolina%20Mall!5e0!3m2!1sro!2sro!4v1707041635308!5m2!1sro!2sro"></iframe>
+                </div>
+                <div class="input-row">
+                    <h3>Contact Us</h3>
+                </div>
+                <div class="input-row">
+                    <table>
+                        <tr>
+                            <td>Email</td>
+                            <td>pulse.assis@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td>0254635874</td>
+                        </tr>
+                        <tr>
+                            <td>Adress</td>
+                            <td>Str. Alexandru Ioan Cuza 2</td>
+                        </tr>
+                    </table>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+        
+    <footer>
+        <div class="footer">
+            <div class="useful-links">
+                <h3>USEFUL LINKS</h3>
+                <a href="./about.html">About</a>
+                <a href="./contact.html">Contact</a>
+                <a href="./products.html">Shop</a>
+            </div>
+            <div class="subscribe">
+                <h3>NEWSLETTER</h3>
+                <form>
+                    <input type="email" placeholder="Your email address" required>
+                    <br>
+                    <button type="submit">SUBSCRIBE</button>
+                   
+                </form>
+            </div>
+            <div class="social-links">
+                <h3>SOCIAL LINKS</h3>
+                <a href="https://www.instagram.com/" target="_blank">INSTAGRAM</a>
+                <a href="https://www.facebook.com/" target="_blank">FACEBOOK</a>
+                <a href="https://www.snapchat.com/" target="_blank">SNAPCHAT</a>
+            </div>
+        </div>
+    </footer>
+    <section class="under-footer">
+        <div> <p>&copy; 2024 FACULTATEA DE STIINTE</p></div>
+    </section>
+   
+</body>
+
+</html>

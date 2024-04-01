@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Courier New', Courier, monospace;
+}
+.btn a{
+    text-decoration: none;
+    color: #000;
+}
+/*----INTRODUCTION------*/
+.intro-info{
+    padding: 3rem;
+    text-align: center; 
+    margin-top: 5rem;
+}
+
+.image-intro{
+    height: 50rem;
+    background-image: url("../Images/img-intro.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+.info h1{
+    font-size: 50px;
+    margin-top: -7rem;
+}
+
+.info p{
+   color: black;
+    text-align: center;
+    padding: 0.4rem;
+    margin-bottom: 2rem; 
+}
+
+.btn{
+    border-radius: 25px;
+    border: none;
+}
+
+.btn:hover{
+    background-color: rgb(217, 215, 215); 
+}
+
+
+/*---------PRODUCTS---------*/
+.row{
+    margin-bottom:2rem;
+    margin-top: 1rem !important;
+}
+
+.row p,.row h5{
+    text-align: center;
+}
+
+/*----------PRODUCTS SCROLL------*/
+.scroll{
+    height: 46rem;
+    display: flex;
+    margin-top: 2rem;
+    overflow-x: auto;
+    justify-content: space-between;
+}
+
+
+.gallery{
+    display:flex ;
+    justify-content: space-between;
+}
+
+
+.product-scroll{
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(205, 202, 202, 0.1);
+    box-sizing: border-box; /* Adăugat pentru a include padding-ul în lățimea totală */
+    padding: 0.5rem;
+    margin: 2rem;
+}
+
+.product-scroll img{
+    max-height: 100%;
+}
+
+.scroll-products h2{
+    font-size: x-large;
+    margin: 1rem;
+    padding-right: 0px;
+    text-indent: 5%;
+}
+
+.scroll-products >div{
+    margin-bottom: 2.5rem;
+}
+
+/*--------SLIDESHOW--------*/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+}
+.carousel-inner{
+    margin-bottom: 2rem;
+}
+
+.carousel-item img {
+    object-fit: contain;
+    width: 100%; /* Optional: to ensure the image fills the container */
+    height: 100%; /* Optional: to ensure the image fills the container */
+}
+
+
+@media screen and (max-width: 417px){
+    .card-text{
+        font-size: x-small;
+    }
+
+    .card-title{
+        font-size: x-small;
+    }
+
+    .scroll{
+        height: 450px;
+    }
+
+    .intro-info p{
+        font-size: small;
+        margin: 0rem;
+    }
+
+    .intro-info h1{
+        font-size:medium;
+    }
+
+    .intro-info btn{
+        padding:0.5rem;
+        margin: 0rem;
+    }
+    .intro-info btn a{
+        font-size: small;
+    }
+
+    .image-intro{
+        width: 100%;
+        background-image: url("../Images/img-intro3.jpg");
+    }
+    
+}
+
+@media screen and (min-width: 417px) and (max-width: 768px){
+    .card-text{
+        font-size: large;
+    }
+
+
+    .card-title{
+        font-size: large;
+    }
+    
+    .intro-info p{
+        font-size: small;
+        margin: 0rem;
+    }
+
+    .intro-info h1{
+        font-size: x-large;
+    }
+
+    .intro-info button{
+        padding:0.5rem;
+        margin: 0rem;
+    }
+    .intro-info button a{
+        font-size: small;
+    }
+
+    .image-intro{
+        width: 100%;
+        background-image: url("../Images/img-intro2.jpg");
+    }
+    .scroll{
+        height: 450px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1115px){
+    .scroll{
+        height: 600px;
+    }
+    .product-scroll {
+        height: 500px;
+    }
+    
+    .card-text{
+        font-size: small;
+    }
+
+    .card-title{
+        font-size: medium;
+    }
+}
+@media screen and (min-width:1115px) and (max-width: 1200px){
+    .card-text{
+        font-size: larger;
+    }
+
+    .card-title{
+        font-size: larger;
+    }
+}
